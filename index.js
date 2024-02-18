@@ -29,6 +29,7 @@ const questions = [
     type:'input',
     Question:'Which license will you use?',
     name: 'License',
+    options: ["MIT", "Apache", "GNU", "BSD", "EPL" ,"None"]
 },
 { 
     type:'input',
@@ -54,11 +55,22 @@ const questions = [
 
 // function to write README file
 function writeToFile(fileName, data) {
+    fs.writeFile(fileName, generateMarkdown(data), err => {
+        if (err) {
+            console.error(err)
+        } else {
+            console.log("Successfully written file")
+        }
+    })
 }
 
 // function to initialize program
 function init() {
-
+inquirer.prompt(questions)
+.then((answers) => {
+    console.log(answers)
+writeToFile(`${answers.title}.md`, answers)    
+})
 }
 
 // function call to initialize program
