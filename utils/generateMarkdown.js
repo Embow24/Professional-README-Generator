@@ -35,26 +35,20 @@ ${createLicenseBadge(data.license)}
    *[Tests](#tests)
    *[Questions](#questions)
 
-<a href= license/> 
   ##License
 
-<a href= installation/>
   ##Installation
   ${data.Installation}
 
-<a href= usage/>
   ##Usage
   ${data.Usage}
   
-<a href= contribute/>
   ##Contribute
   ${data.Contribute}
 
-<a href= tests/>
   ##Tests
   ${data.Tests}
 
-<a href= questions/>
   ##Questions
   [Click to access GitHub](https://www.github.com/${data.GitHub})
   [Click to send me an email](${data.Email})
