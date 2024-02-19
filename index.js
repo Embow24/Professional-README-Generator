@@ -26,10 +26,10 @@ const questions = [
     name: 'Description',
 },
 { 
-    type:'input',
+    type:'list',
     Question:'Which license will you use?',
     name: 'License',
-    choices: ["MIT", "Apache", "GNU", "BSD", "EPL" ,"None"]
+    choices: ["MIT", "Apache", "Eclipse", "Mozilla" ,"None"]
 },
 { 
     type:'input',
