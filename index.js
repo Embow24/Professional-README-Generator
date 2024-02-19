@@ -1,55 +1,55 @@
 const fs = require("fs");
 const path = require('path');
 const inquirer = require("inquirer");
-const generateMarkdown = require("./utils/generateMarkdown");
+const generateMarkdown = require("./utils/generateMarkdown.js");
 
 // array of questions for user
 const questions = [
     { 
     type:'input',
-    Question:'What is your GitHub user name?',
     name: 'GitHub',
+    message:'What is your GitHub user name?',
 },
 { 
-    type:'email',
-    Question:'What is your email address?',
+    type:'input',
     name: 'Email',
+    message:'What is your email address?',
 },
 { 
     type:'input',
-    Question:'What is the title of your project?',
     name: 'Title',
+    message:'What is the title of your project?',
 },
 { 
     type:'input',
-    Question:'How would you describe your project?',
     name: 'Description',
+    message:'How would you describe your project?',
 },
 { 
     type:'list',
-    Question:'Which license will you use?',
     name: 'License',
+    message:'Which license will you use?',
     choices: ["MIT", "Apache", "Eclipse", "Mozilla" ,"None"]
 },
 { 
     type:'input',
-    Question:'How do you install your project?',
     name: 'Installation',
+    message:'How do you install your project?',
 },
 { 
     type:'input',
-    Question:'How do you use your project?',
     name: 'Usage',
+    message:'How do you use your project?',
 },
 { 
     type:'input',
-    Question:'How can your project be contributed to?',
     name: 'Contribute',
+    message:'How can your project be contributed to?',
 },
 { 
     type:'input',
-    Question:'Which tests need to be run',
     name: 'Tests',
+    message:'Which tests need to be run?',
 },
 ];
 
@@ -69,7 +69,7 @@ function init() {
 inquirer.prompt(questions)
 .then((answers) => {
     console.log(answers)
-writeToFile(`${answers.title}.md`, answers)    
+writeToFile(`${answers.Title}.md`, answers)    
 })
 }
 

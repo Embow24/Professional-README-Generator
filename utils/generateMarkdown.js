@@ -11,6 +11,8 @@ switch (license) {
    return "[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)"
   case "None":
     return ""
+  default:
+    return ""
 }
 }
 
@@ -21,37 +23,38 @@ switch (license) {
 
 // function to generate markdown for README
 function generateMarkdown(data) {
-  return `# ${data.title}
-${createLicenseBadge(data.license)}
+  let badge = createLicenseBadge(data.License)
+  return `# ${data.Title}
+  ${badge}
 
-  ##Description
+  ## Description
   ${data.Description}
 
-  ##Table of Contents:
-   *[License](#license)
-   *[Installation](#installation)
-   *[Usage](#usage)
-   *[Contribute](#contribute)
-   *[Tests](#tests)
-   *[Questions](#questions)
+  ## Table of Contents:
+   *[License](#License)
+   *[Installation](#Installation)
+   *[Usage](#Usage)
+   *[Contribute](#Contribute)
+   *[Tests](#Tests)
+   *[Questions](#Questions)
 
-  ##License
+  ## License
 
-  ##Installation
+  ## Installation
   ${data.Installation}
 
-  ##Usage
+  ## Usage
   ${data.Usage}
   
-  ##Contribute
+  ## Contribute
   ${data.Contribute}
 
-  ##Tests
+  ## Tests
   ${data.Tests}
 
-  ##Questions
+  ## Questions
   [Click to access GitHub](https://www.github.com/${data.GitHub})
-  [Click to send me an email](${data.Email})
+  [Send me an email at this address:]${data.Email}
 `;
 }
 
