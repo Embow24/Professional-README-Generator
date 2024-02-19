@@ -4,21 +4,15 @@
   
 
   #Table of Contents:
-
    *[License](#license)
-
    *[Installation](#installation)
-
    *[Usage](#usage)
-
    *[Contribute](#contribute)
-
    *[Tests](#tests)
-
    *[Questions](#questions)
 
   #License
-  <a name= license/>
+  <a href= license>
   
 
   #Installation
@@ -39,5 +33,5 @@
 
   #Questions
   <a href= questions>
-  
-  
+  GitHub:" Embow24 <a href=data.GitHub>
+  "Email:" 

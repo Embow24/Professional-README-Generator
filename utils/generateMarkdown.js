@@ -6,17 +6,11 @@ function generateMarkdown(data) {
   ${data.Description}
 
   #Table of Contents:
-
    *[License](#license)
-
    *[Installation](#installation)
-
    *[Usage](#usage)
-
    *[Contribute](#contribute)
-
    *[Tests](#tests)
-
    *[Questions](#questions)
 
   #License
@@ -41,8 +35,8 @@ function generateMarkdown(data) {
 
   #Questions
   <a href= questions>
-  ${data.GitHub}
-  ${data.Email}
+  [GitHub:] ${data.GitHub} <a href=https://www.github.com/${data.GitHub}>
+  [Email:] ${data.Email}
 `;
 }
 
