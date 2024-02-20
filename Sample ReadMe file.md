@@ -1,8 +1,8 @@
 # Sample ReadMe file
-  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+  [![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
 
   ## Description
-  This is a test practice for the README generator project
+  This is a practice ReadMe file
 
   ## Table of Contents:
    * [License](#License)
@@ -13,20 +13,20 @@
    * [Questions](#Questions)
 
   ## License
-  MIT
+  Mozilla
 
   ## Installation
   npm i
 
   ## Usage
-  Run node index.js in the command line
+  node index.js
   
   ## Contribute
   Please feel free to contribute
 
   ## Tests
-  npm tests must be run
+  npm tests
 
   ## Questions
   * [Click to access GitHub](https://www.github.com/Embow24)
-  * If you have any questions send me an email at this address: @gmail.com
+  * If you have any questions send me an email at this address: @gmail
